@@ -29,5 +29,13 @@
   "devDependencies": {
     "dotenv-cli": "^7.1.0",
     "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "sequelize": "sequelize",
+    "sequelize-cli": "sequelize-cli",
+    "start": "per-env",
+    "start:development": "nodemon -r dotenv/config ./bin/www",
+    "start:production": "node ./bin/www"
   }
+
 }
